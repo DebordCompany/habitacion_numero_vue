@@ -32,4 +32,6 @@ npm run build
 
 ```sh
 npm run lint
-```
+```   
+## la dirección para ver la preview es:  
+https://jocular-baklava-88aebd.netlify.app
