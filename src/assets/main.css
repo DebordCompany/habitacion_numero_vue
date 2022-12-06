@@ -1,0 +1,6 @@
+@import './base.css';
+.max-width {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--padding-gap);
+}/*# sourceMappingURL=main.css.map */
