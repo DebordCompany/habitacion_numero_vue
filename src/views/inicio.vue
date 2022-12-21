@@ -72,6 +72,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
   grid-template-columns: 1fr 1fr 1fr;
   position: absolute;
   bottom: -10vh;
+  left: 1em;
   padding: 0 1em;
 
 }
@@ -100,6 +101,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 @media (min-width: 768px) {
   .container_puerta {
     grid-template-columns: 1fr 1fr 1fr;
+    left: inherit;
   }
 }
 </style>
