@@ -31,7 +31,11 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
       </div>
     </div>
     <div class="tierra">
-      
+      <div class="categorias max-width">
+        <router-link to="/meta"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img contacto"></router-link>
+        <router-link to="/meta"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img aplica"></router-link>
+        <router-link to="/meta"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img prensa"></router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -71,7 +75,28 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
   padding: 0 1em;
 
 }
-
+.tierra{
+  min-height: 50vh;
+  background-image: url("../assets/img/suelo.png");
+  background-size: cover;
+  background-position: center;
+}
+.categorias{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr ;
+  padding:5em 1em;
+  gap: 1em;
+}
+.contacto{
+  
+  transform: rotate(-15deg);
+}
+.prensa{
+  transform: rotate(5deg);
+}
+.aplica{
+  transform: rotate(40deg);
+}
 @media (min-width: 768px) {
   .container_puerta {
     grid-template-columns: 1fr 1fr 1fr;

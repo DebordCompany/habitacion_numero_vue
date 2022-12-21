@@ -15,7 +15,7 @@ export default {
   justify-content: center;
 }
 .puerta_a {
-  cursor: url("../assets/llave_raton.png"), auto;
+  cursor: url("../assets/img/llave_raton.png"), auto;
   max-width: 250px;
 }
 </style>
