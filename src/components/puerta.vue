@@ -10,7 +10,7 @@ export default {
 </script>
 <style scoped>
 .puerta {
-  padding: var(--padding-gap);
+  
   display: flex;
   justify-content: center;
 }
