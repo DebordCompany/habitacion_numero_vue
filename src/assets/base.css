@@ -59,9 +59,8 @@
 }
 /* Evitamos problemas con las imagenes */
 img, picture, video, iframe, figure {
-  
+  display: block;
   width: 100%;
-  
   object-fit: cover;
   
 }
@@ -148,9 +147,7 @@ svg {
 body {
   min-height: 100vh;
   color: var(--negro);
-  background: var(--gris);
   transition: color 0.5s, background-color 0.5s;
-  line-height: 1.6;
   font-family: var(--tipografia);
   hyphens: none;
   
