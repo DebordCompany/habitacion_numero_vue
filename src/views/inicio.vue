@@ -32,9 +32,9 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
     </div>
     <div class="tierra">
       <div class="categorias max-width">
-        <router-link to="/meta"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img contacto"></router-link>
-        <router-link to="/meta"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img aplica"></router-link>
-        <router-link to="/meta"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img prensa"></router-link>
+        <router-link to="/meta" class="contacto"><img src="../assets/img/tarjeta_aplica.png" alt="" class="categorias_img"></router-link>
+        <router-link to="/meta" class="aplica"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img "></router-link>
+        <router-link to="/meta" class="prensa"><img src="../assets/img/tarjeta_prensa.png" alt="" class="categorias_img "></router-link>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 .cielo{
   background: url("../assets/img/cielo.png");
   background-size: cover;
-  height: 50vh;
+  height: 45vh;
   display: flex;
   justify-content: center;
 }
@@ -56,10 +56,10 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
   align-items: flex-start;
 }
 .agua{
-  background: url("../assets/img/mar_mobile.png");
+  background: url("../assets/img/mar.png");
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 45vh;
   position: relative;
 }
 .container{
@@ -84,19 +84,28 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 }
 .categorias{
   display: grid;
-  grid-template-columns: 1.5fr 1fr ;
+  grid-template-columns: 2fr 1fr ;
   padding:5em 1em;
   gap: 1em;
+  
 }
 .contacto{
   
   transform: rotate(-15deg);
+  position: relative;
+}
+.contacto img{
+  position: absolute;
+  top: -8em;
+  left: 1em;
 }
 .prensa{
   transform: rotate(5deg);
+  padding: 2em;
 }
 .aplica{
   transform: rotate(40deg);
+  
 }
 @media (min-width: 768px) {
   .container_puerta {
