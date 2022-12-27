@@ -1,5 +1,6 @@
 <script setup>
-import EnButton from "../components/EnButton.vue"
+import EnButton from "../components/EnButton.vue";
+import MenuNavegacionVue from "../components/MenuNavegacion.vue";
 </script>
 <template>
     <div class="container max-width">
@@ -12,6 +13,9 @@ import EnButton from "../components/EnButton.vue"
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aspernatur eos, rerum nisi porro veniam unde natus sapiente, ipsam repellat obcaecati hic magni eligendi adipisci odit ab ea! Tempora vitae dignissimos earum laboriosam non sint cupiditate et labore iusto unde. Dolorem, nam qui in impedit accusamus possimus. Blanditiis, velit perferendis.</p>
          </div>
     </div>
+    <MenuNavegacionVue
+    linkUrl="meta"
+    />
    
 </template>
 <style scoped>

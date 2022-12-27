@@ -5,6 +5,7 @@ import puertaResidencias from "../assets/img/puerta_residencias.png";
 import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 </script>
 <template>
+
   <div>
     
     <div class="cielo">
@@ -31,10 +32,11 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
       </div>
     </div>
     <div class="tierra">
-      <div class="categorias max-width">
-        <router-link to="/meta" class="contacto"><img src="../assets/img/tarjeta_aplica.png" alt="" class="categorias_img"></router-link>
-        <router-link to="/meta" class="aplica"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img "></router-link>
+      <div class="categorias ">
+        <router-link to="/meta" class="aplica"><img src="../assets/img/tarjeta_aplica.png" alt="" class="categorias_img"></router-link>
+        
         <router-link to="/meta" class="prensa"><img src="../assets/img/tarjeta_prensa.png" alt="" class="categorias_img "></router-link>
+        <router-link to="/meta" class="contacto"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img "></router-link>
       </div>
     </div>
   </div>
@@ -84,33 +86,47 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 }
 .categorias{
   display: grid;
-  grid-template-columns: 2fr 1fr ;
+  grid-template-columns: 1fr ;
   padding:5em 1em;
-  gap: 1em;
+ 
   
 }
-.contacto{
+.aplica{
   
   transform: rotate(-15deg);
   position: relative;
 }
-.contacto img{
+.aplica img{
   position: absolute;
   top: -8em;
   left: 1em;
 }
 .prensa{
   transform: rotate(5deg);
-  padding: 2em;
+  padding: 4em;
 }
-.aplica{
+.contacto{
   transform: rotate(40deg);
+  padding: 2em;
   
 }
 @media (min-width: 768px) {
   .container_puerta {
     grid-template-columns: 1fr 1fr 1fr;
     left: inherit;
+  }
+  .categorias{
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 5em;
+    
+  }
+  .categorias_img{
+    max-width: 300px;
+  }
+  .prensa{
+    padding: 1em;
   }
 }
 </style>
