@@ -6,7 +6,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 </script>
 <template>
 
-  <div>
+  <div class="content">
     
     <div class="cielo">
       <div class="container flex-start">
@@ -42,6 +42,9 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
   </div>
 </template>
 <style scoped>
+.content{
+  overflow: hidden;
+}
 .cielo{
   background: url("../assets/img/cielo.png");
   background-size: cover;
@@ -51,7 +54,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 }
 .cielo_img{
   max-width: 900px;
-  padding: 2em;
+  padding: 2em 0;
 
 }
 .flex-start{
@@ -67,6 +70,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 .container{
   display: flex;
   justify-content: center;
+  
 }
 
 .container_puerta {
@@ -76,6 +80,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
   bottom: -10vh;
   left: 1em;
   padding: 0 1em;
+ 
 
 }
 .tierra{
@@ -83,6 +88,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
   background-image: url("../assets/img/suelo.png");
   background-size: cover;
   background-position: center;
+  
 }
 .categorias{
   display: grid;
@@ -111,10 +117,14 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
   
 }
 @media (min-width: 768px) {
+  
   .container_puerta {
-    grid-template-columns: 1fr 1fr 1fr;
-    left: inherit;
-  }
+  
+  bottom: -25vh;
+  left: inherit;
+  
+
+}
   .categorias{
     grid-template-columns: 1.5fr 1fr;
     max-width: 1200px;
