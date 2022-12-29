@@ -1,9 +1,11 @@
 <script setup>
 import EnButton from "../components/EnButton.vue";
 import MenuNavegacionVue from "../components/MenuNavegacion.vue";
+import prueba from "../components/Prueba.vue";
 </script>
 <template>
     <div class="container max-width">
+        <prueba/>
          <EnButton/>
          <div class="texto">
             <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit mollitia ea, cum expedita harum laudantium molestiae quo aliquid, nihil, rem iste inventore ipsa nisi possimus? Itaque pariatur dignissimos mollitia rem.</h1>
