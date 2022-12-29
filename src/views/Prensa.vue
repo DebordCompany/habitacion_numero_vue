@@ -1,0 +1,3 @@
+<template>
+    soy prensa
+</template>

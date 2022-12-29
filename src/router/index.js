@@ -3,6 +3,9 @@ import inicio from "../views/inicio.vue";
 import meta from "../views/meta.vue";
 import residencias from "../views/residencias.vue";
 import instalaciones from "../views/instalaciones.vue";
+import aplica from "../views/Aplica.vue";
+import prensa from "../views/Prensa.vue";
+import contacto from "../views/Contacto.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +29,21 @@ const router = createRouter({
       path: "/instalaciones",
       name: "instalaciones",
       component: instalaciones,
+    },
+    {
+      path: "/contacto",
+      name: "contacto",
+      component: contacto,
+    },
+    {
+      path: "/aplica",
+      name: "aplica",
+      component: aplica,
+    },
+    {
+      path: "/prensa",
+      name: "prensa",
+      component: prensa,
     },
     
   ],

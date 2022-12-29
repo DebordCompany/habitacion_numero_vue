@@ -33,10 +33,10 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
     </div>
     <div class="tierra">
       <div class="categorias ">
-        <router-link to="/meta" class="aplica"><img src="../assets/img/tarjeta_aplica.png" alt="" class="categorias_img"></router-link>
+        <router-link to="/aplica" class="aplica"><img src="../assets/img/tarjeta_aplica.png" alt="" class="categorias_img"></router-link>
         
-        <router-link to="/meta" class="prensa"><img src="../assets/img/tarjeta_prensa.png" alt="" class="categorias_img "></router-link>
-        <router-link to="/meta" class="contacto"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img "></router-link>
+        <router-link to="/prensa" class="prensa"><img src="../assets/img/tarjeta_prensa.png" alt="" class="categorias_img "></router-link>
+        <router-link to="/contacto" class="contacto"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img "></router-link>
       </div>
     </div>
   </div>
