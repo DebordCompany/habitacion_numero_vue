@@ -54,7 +54,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 }
 .cielo_img{
   max-width: 900px;
-  padding: 2em 0;
+  padding: 5em 0;
 
 }
 .flex-start{
@@ -77,9 +77,9 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: absolute;
-  bottom: -10vh;
-  left: 1em;
-  padding: 0 1em;
+  bottom: -30vh;
+  
+  padding: .5em;
  
 
 }
