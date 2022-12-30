@@ -54,7 +54,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 }
 .cielo_img{
   max-width: 900px;
-  padding: 5em 0;
+  padding-top: 7em;
 
 }
 .flex-start{
@@ -97,6 +97,9 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
  
   
 }
+.categorias img{
+  max-width: 15em;
+}
 .aplica{
   
   transform: rotate(-15deg);
@@ -106,7 +109,7 @@ import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
   position: absolute;
   top: -8em;
   left: 1em;
-}
+} 
 .prensa{
   transform: rotate(5deg);
   padding: 4em;
