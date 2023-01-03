@@ -74,8 +74,7 @@
   justify-content: center;
   align-items: center;
 }
-.cielo_img {
-}
+
 .mar {
   background-image: url("/img/mar.png");
   background-size: cover;
@@ -95,7 +94,7 @@
 .mar_content {
   display: flex;
   justify-content: center;
-  width: 100%;
+  
 }
 .tierra {
   background-image: url("/img/suelo.png");
