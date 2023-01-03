@@ -8,14 +8,14 @@ export default {
   props: ["imagen"],
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .puerta {
   min-width: 1.5vw;
   display: flex;
   justify-content: center;
 }
 .puerta_a {
-  cursor: url("../assets/img/llave_raton.png"), auto;
+  cursor: url("/img/llave_raton.png"), auto;
   
 }
 </style>

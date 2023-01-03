@@ -1,16 +1,16 @@
 <template>
     <div class="container">
         <div class="container_img">
-            <img src="../assets/img/membrete.svg" alt="" width="100%" height="auto">
+            <img src="/img/membrete.svg" alt="" width="100%" height="auto">
         </div>
         
         <div class="container_position">
-            <img src="../assets/img/pomo.png" alt="" class="container_position_img">
+            <img src="/img/pomo.png" alt="" class="container_position_img">
             <div class="container_position_button"><p>ES/EN</p></div>
         </div>
     </div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 .container{
     position: relative;
     margin: 0;

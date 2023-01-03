@@ -1,145 +1,128 @@
 <script setup>
-import puerta from "../components/puerta.vue";
-import puertaMeta from "../assets/img/puerta_meta.png";
-import puertaResidencias from "../assets/img/puerta_residencias.png";
-import puertaInstalaciones from "../assets/img/puerta_instalaciones.png";
 </script>
 <template>
-
-  <div class="content">
-    
-    <div class="cielo">
-      <div class="container flex-start">
-        <img src="../assets/img/titulo.png" alt="" class="cielo_img">
-      </div>
-      
+  <div class="main">
+    <div class="textos">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae illum
+        possimus qui dolorem. Rem dolore ipsam error itaque laboriosam, aut
+        nostrum amet autem porro repudiandae voluptatibus ducimus qui eum nam
+        sed explicabo molestiae excepturi sapiente corrupti suscipit. Illo ad,
+        voluptates necessitatibus iure fugit temporibus totam incidunt placeat
+        impedit quod repudiandae tenetur voluptas quasi cumque dolores qui natus
+        eius, enim amet ex accusamus aliquid quidem? Accusantium dolores velit
+        modi quam sit possimus quibusdam natus sapiente deleniti laboriosam
+        pariatur dicta alias qui aliquid ipsum esse et labore dolore soluta fuga
+        voluptatum dolorem, nobis quidem obcaecati? Minima nostrum cumque harum
+        quo fugit!
+      </p>
     </div>
-    <div class="agua">
-      
-      <div class="container">
-        <div class="container_puerta">
-          <router-link to="/meta">
-          <puerta :imagen="puertaMeta"></puerta>
-        </router-link>
-        <router-link to="/residencias">
-          <puerta :imagen="puertaResidencias"></puerta>
-        </router-link>
-        <router-link to="/instalaciones">
-          <puerta :imagen="puertaInstalaciones"></puerta>
-        </router-link>
+    <div class="cielo">
+      <div class="cielo_img max-width">
+        <img src="/img/titulo.png" alt="" />
+      </div>
+    </div>
+    <div class="mar">
+      <div class="mar_position max-width">
+        <div class="mar_content">
+          <router-link to="/meta"
+            ><img src="/img/puerta_meta.png" alt=""
+          /></router-link>
+          <router-link to="/instalaciones"
+            ><img src="/img/puerta_instalaciones.png" alt=""
+          /></router-link>
+          <router-link to="/residencias"
+            ><img src="/img/puerta_residencias.png" alt=""
+          /></router-link>
         </div>
-        
       </div>
     </div>
     <div class="tierra">
-      <div class="categorias ">
-        <router-link to="/aplica" class="aplica"><img src="../assets/img/tarjeta_aplica.png" alt="" class="categorias_img"></router-link>
-        
-        <router-link to="/prensa" class="prensa"><img src="../assets/img/tarjeta_prensa.png" alt="" class="categorias_img "></router-link>
-        <router-link to="/contacto" class="contacto"><img src="../assets/img/tarjeta_contacto.png" alt="" class="categorias_img "></router-link>
+      <div class="tierra_container max-width">
+        <router-link to="/aplica"
+          ><div class="tarjeta">
+            <img src="/img/tarjeta_aplica.png" alt="" class="aplica" /></div
+        ></router-link>
+        <router-link to="/contacto"
+          ><div class="tarjeta">
+            <img src="/img/tarjeta_contacto.png" alt="" class="contacto" /></div
+        ></router-link>
+        <router-link to="/prensa"
+          ><div class="tarjeta">
+            <img src="/img/tarjeta_prensa.png" alt="" class="prensa" /></div
+        ></router-link>
       </div>
     </div>
   </div>
 </template>
-<style scoped>
-.content{
+<style lang="scss" scoped>
+.main {
   overflow: hidden;
 }
-.cielo{
-  background: url("../assets/img/cielo.png");
+.textos {
+  position: fixed;
+  top: 0;
+  z-index: -10;
+  color: white;
+}
+.cielo {
+  background-image: url("/img/cielo.png");
   background-size: cover;
+  width: 100%;
   height: 45vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.cielo_img{
-  max-width: 900px;
-  padding-top: 7em;
-
+.cielo_img {
 }
-.flex-start{
-  align-items: flex-start;
-}
-.agua{
-  background: url("../assets/img/mar.png");
+.mar {
+  background-image: url("/img/mar.png");
   background-size: cover;
-  background-position: center;
+  width: 100%;
   height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
-.container{
-  display: flex;
-  justify-content: center;
-  
-}
-
-.container_puerta {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.mar_position {
   position: absolute;
-  bottom: -30vh;
-  
-  padding: .5em;
- 
-
+  bottom: 10em;
+  padding: 0.5em;
+  width: 100%;
 }
-.tierra{
-  min-height: 50vh;
-  background-image: url("../assets/img/suelo.png");
+.mar_content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tierra {
+  background-image: url("/img/suelo.png");
   background-size: cover;
-  background-position: center;
-  
+  width: 100%;
 }
-.categorias{
+.tierra_container {
   display: grid;
-  grid-template-columns: 1fr ;
-  padding:5em 1em;
- 
-  
+  grid-template-columns: 1fr;
+  gap: 2em;
+  padding: 1em;
 }
-.categorias img{
-  max-width: 15em;
-}
-.aplica{
-  
-  transform: rotate(-15deg);
+.tarjeta {
   position: relative;
 }
-.aplica img{
+.aplica {
+  padding: 1em;
+  transform: rotate(-15deg);
   position: absolute;
   top: -8em;
-  left: 1em;
-} 
-.prensa{
-  transform: rotate(5deg);
-  padding: 4em;
 }
-.contacto{
-  transform: rotate(40deg);
+.contacto {
   padding: 2em;
-  
+  transform: rotate(15deg);
 }
-@media (min-width: 768px) {
-  
-  .container_puerta {
-  
-  bottom: -25vh;
-  left: inherit;
-  
-
-}
-  .categorias{
-    grid-template-columns: 1.5fr 1fr;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 5em;
-    
-  }
-  .categorias_img{
-    max-width: 300px;
-  }
-  .prensa{
-    padding: 1em;
-  }
+.prensa {
+  padding: 2em;
+  transform: rotate(-45deg);
 }
 </style>

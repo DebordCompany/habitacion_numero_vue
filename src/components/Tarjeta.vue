@@ -37,7 +37,7 @@ export default{
          </div>
     </div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 .container{
     margin-top: 2em;
 }

@@ -12,3 +12,6 @@ export default{
     seo="lorem ipsum dolor met, las meigas gallegas son las mejores meigas que te puedes encontraer"
     />
 </template>
+<style lang="scss" scoped>
+
+</style>

@@ -1,7 +1,7 @@
 <script setup>
 import EnButton from "../components/EnButton.vue";
 import MenuNavegacionVue from "../components/MenuNavegacion.vue";
-import prueba from "../components/Prueba.vue";
+
 </script>
 <template>
     <div class="container max-width">
@@ -20,7 +20,7 @@ import prueba from "../components/Prueba.vue";
     />
    
 </template>
-<style scoped>
+<style lang="scss" scoped>
 .container{
     margin-top: 2em;
 }
