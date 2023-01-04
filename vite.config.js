@@ -16,7 +16,7 @@ export default defineConfig({
           scss: {
             additionalData: `
               @import "./src/styles/variables.scss";
-              
+              @import "./src/styles/responsive.scss";
             `
           }
         }

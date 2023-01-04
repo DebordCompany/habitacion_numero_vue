@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 <template>
   <div class="main">
     <div class="textos">
@@ -84,37 +83,77 @@
   justify-content: center;
   align-items: center;
   position: relative;
+ 
 }
 .mar_position {
   position: absolute;
   bottom: 10em;
   padding: 0.5em;
   width: 100%;
+  @include mobile() {
+    bottom: 7em;
+  }
+  @include tablet() {
+    bottom: 5em;
+  }
+  @include laptop(){
+    bottom: 3em;
+  }
+  
 }
 .mar_content {
   display: flex;
   justify-content: center;
-  
+
+  @include tablet() {
+    max-width: $mx-tablet;
+    margin: auto;
+  }
+  @include tablet-grande(){
+    gap: 2em;
+    max-width: $mx-tablet-grande;
+  }
 }
 .tierra {
   background-image: url("/img/suelo.png");
   background-size: cover;
   width: 100%;
+  display: grid;
+  justify-content: center;
 }
 .tierra_container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2em;
   padding: 1em;
+  justify-content: center;
+
+  @include tablet() {
+    max-width: $mx-tablet;
+    margin: auto;
+  }
+  @include tablet-grande(){
+    grid-template-columns: 1fr 1fr;
+    max-width: $mx-tablet-grande;
+  }
 }
 .tarjeta {
   position: relative;
+  max-width: 80vw;
+  align-self: center;
+  @include tablet() {
+    max-width: $mx-tablet-tarjeta;
+  }
+
 }
 .aplica {
   padding: 1em;
   transform: rotate(-15deg);
   position: absolute;
   top: -8em;
+  @include tablet-grande(){
+    top: -5em;
+  }
 }
 .contacto {
   padding: 2em;

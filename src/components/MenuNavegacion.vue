@@ -17,11 +17,14 @@ export default{
 .menu{
  display: flex;
  justify-content: space-between;
- gap: 8em;
+ padding: 1em 0;
+ 
 }
-@media (min-width:768px) {
-    .menu{
-        gap: 20em;
+.menu>div{
+    max-width: 30%;
+    @include tablet(){
+        max-width: 20%;
     }
 }
+
 </style>
