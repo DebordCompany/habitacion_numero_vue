@@ -6,7 +6,7 @@
         
         <div class="container_position">
             <img src="/img/pomo.png" alt="" class="container_position_img">
-            <div class="container_position_button"><p>ES/EN</p></div>
+            <div class="container_position_button"><p></p></div>
         </div>
     </div>
 </template>
@@ -35,14 +35,5 @@
     filter: drop-shadow(1px 1px 5px  rgba(0, 0, 0, 0.382));
     margin: 0;
 }
-.container_position_button{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-}
+
 </style>

@@ -57,6 +57,7 @@
 <style lang="scss" scoped>
 .main {
   overflow: hidden;
+  
 }
 .textos {
   position: fixed;
@@ -73,7 +74,11 @@
   justify-content: center;
   align-items: center;
 }
-
+.cielo_img{
+  @include landscape-mobile (){
+    padding: 10em;
+  }
+}
 .mar {
   background-image: url("/img/mar.png");
   background-size: cover;
@@ -99,6 +104,12 @@
   @include laptop(){
     bottom: 3em;
   }
+  @include landscape-mobile(){
+    bottom: 0em;
+  }
+  @include landscape-tablet(){
+    bottom: 4em;
+  }
   
 }
 .mar_content {
@@ -112,6 +123,15 @@
   @include tablet-grande(){
     gap: 2em;
     max-width: $mx-tablet-grande;
+  }
+  @include laptop (){
+    max-width: $mx-tablet;
+  }
+  @include landscape-mobile (){
+    max-width: 400px;
+  }
+  @include landscape-tablet(){
+    max-width: 500px;
   }
 }
 .tierra {

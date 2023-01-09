@@ -54,12 +54,14 @@ import MenuNavegacionVue from "../components/MenuNavegacion.vue";
 }
 .texto {
   background: var(--gris);
-  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
   text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 1em;
-  color: white;
+  
   font-weight: 600;
 }
 </style>
